@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список Користувачів</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Звіт про користувачів</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="admin.html" class="link">Кабінет</a></li>
+          <li>
+            <a href="getclient.html" class="link">Отримати звіт про читачів</a>
+          </li>
+          <li>
+            <a href="updatebook.html" class="link"
+              >Зміна інформації про книгу</a
+            >
+          </li>
+          <li><a href="home.html" class="link">Вихід</a></li>
+        </ul>
+      </nav>
+
+      <div class="Book">
+        <h2>Звіт про книги, які оформлювали</h2>
+        <table id="getBook">
+          <tr>
+            <td class="tab">nameBook</td>
+            <td class="tab">languageBook</td>
+            <td class="tab">pageBook</td>
+            <td class="tab">countBook</td>
+            <td class="tab">genreBook</td>
+            <td class="tab">autor</td>
+            <td class="tab">autorBithday</td>
+            <td class="tab">countIssuedBook</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="Book1">
+        <h2>Звіт про книги, які бронювали</h2>
+        <table id="getBook1">
+          <tr>
+            <td class="tab">nameBook</td>
+            <td class="tab">languageBook</td>
+            <td class="tab">pageBook</td>
+            <td class="tab">countBook</td>
+            <td class="tab">genreBook</td>
+            <td class="tab">autor</td>
+            <td class="tab">autorBithday</td>
+            <td class="tab">countReservationBook</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./services/book.js"></script>
+    <script src="./controllers/bookController.js"></script>
+  </body>
+</html>

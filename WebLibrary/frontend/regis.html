@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма Реєстрації</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Підключіть ваш файл стилів -->
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Реєстрація на сайті бібліотеки</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="home.html" class="link">Головна</a></li>
+          <li><a href="book.html" class="link">Каталог книг</a></li>
+        </ul>
+      </nav>
+
+      <section id="registration-form">
+        <form action="process-registration.php" method="post">
+          <label for="full_name">Повне Ім'я:</label>
+          <input type="text" id="full_name" name="full_name" required />
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+
+          <label for="login">Логін:</label>
+          <input type="text" id="login" name="login" required />
+
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required />
+
+          <label for="birthday">Дата Народження:</label>
+          <input type="date" id="birthday" name="birthday" required />
+
+          <button type="submit">Зареєструватися</button>
+        </form>
+
+        <p>
+          Є акаунт? <a href="auto.html" style="color: rgb(8, 67, 134)">Вхід</a>
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Ваша компанія</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Забронювати книгу</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header><h1>Бронювання книги</h1></header>
+      <nav>
+        <ul>
+          <li><a href="cabinet.html" class="link">Кабінет</a></li>
+          <li>
+            <a href="update.html" class="link">Змінити персональні дані</a>
+          </li>
+          <li><a href="book.html" class="link">Каталог книг</a></li>
+          <li><a href="bookreserv.html" class="link">Мої книги</a></li>
+          <li><a href="home.html" class="link">Вихід</a></li>
+        </ul>
+      </nav>
+      <section>
+        <form id="reservationForm">
+          <label for="dateReserv">Дата бронювання:</label>
+          <input type="date" id="dateReserv" name="dateReserv" required />
+
+          <label for="dateEndReserv">Дата завершення бронювання:</label>
+          <input type="date" id="dateEndReserv" name="dateEndReserv" required />
+
+          <!-- Введення для користувача може бути автоматично встановлено, тому його можна приховати -->
+          <input type="hidden" id="user" name="user" value="0" />
+
+          <label for="bookIdbook">ID книги:</label>
+          <input type="text" id="bookIdbook" name="bookIdbook" required />
+
+          <button type="submit">Забронювати</button>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2023 Ваша компанія</p>
+    </footer>
+  </body>
+</html>

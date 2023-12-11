@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список Користувачів</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Звіт про користувачів</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="admin.html" class="link">Кабінет</a></li>
+          <li>
+            <a href="getbooks.html" class="link">Отримати звіт про книги</a>
+          </li>
+          <li>
+            <a href="updatebook.html" class="link"
+              >Зміна інформації про книгу</a
+            >
+          </li>
+          <li><a href="home.html" class="link">Вихід</a></li>
+        </ul>
+      </nav>
+
+      <div class="User">
+        <table id="getUser">
+          <tr>
+            <td class="tab">Iduser</td>
+            <td class="tab">FullName</td>
+            <td class="tab">Email</td>
+            <td class="tab">Login</td>
+            <td class="tab">Password</td>
+            <td class="tab">Bithday</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="./services/user.js"></script>
+    <script src="./controllers/userController.js"></script>
+  </body>
+</html>

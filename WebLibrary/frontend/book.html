@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн Бібліотека "Книжковий Світ"</title>
+
+       
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="container">
+        <header>
+ 
+    <h1>Ваш шлях у світ знань та уяви</h1></header>
+    <nav>
+        <ul>
+             <li><a href="home.html" class="link">Головна</a></li>
+            <li><a href="auto.html" class="link">Вхід/реєстрація</a></li>
+           
+           
+        </ul>
+    </nav>
+   
+    </div>
+
+    <div id="app">
+        <form id="filter">
+                <div class="block">
+                    <div>languageBook</div>
+        
+                    <input id="language1" name="language" type="checkbox" value="Английский" />
+                    <label for="language1">Английский</label>
+        
+                    <input id="language2" name="language" type="checkbox" value="Русский" />
+                    <label for="language2">Русский</label>
+                </div>
+               
+       
+            
+  
+          <div>
+            <input type="submit" value="Get!" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    </div>
+
+
+    <div class="Bookinfos">
+    
+       
+        <table id="getBookinfos">
+          <tr>
+            <td class="tab">nameBook</td>
+            <td class="tab">languageBook</td>
+            <td class="tab">pageBook</td>
+            <td class="tab">countBook</td>
+          </tr>
+        </table>
+      </div>
+
+
+
+
+
+<!-- Додайте секції для Літературних Подій, Читацького Досвіду, Контактів та інших елементів -->
+
+<footer>
+    <p>&copy; 2023 Онлайн Бібліотека</p>
+</footer>
+
+<!-- Додайте тут ваші скрипти та інші елементи -->
+<script src="./services/bookinfo.js"></script>
+<script src="./controllers/bookInfoController.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бронювання Книг</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Підключіть ваш файл стилів -->
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Мої книги</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="cabinet.html" class="link">Кабінет</a></li>
+
+          <li>
+            <a href="update.html" class="link">Змінити персональні дані</a>
+          </li>
+          <li><a href="book.html" class="link">Каталог книг</a></li>
+
+          <li><a href="reserv.html" class="link">Забронювати книгу</a></li>
+          <li><a href="home.html" class="link">Вихід</a></li>
+        </ul>
+      </nav>
+
+      <div class="BookIssued">
+        <h1>Оформлені книги</h1>
+        <table id="getBookIssued">
+          <tr>
+            <td class="tab">dateReserv</td>
+            <td class="tab">dateEndReserv</td>
+
+            <td class="tab">bookIdbook</td>
+            <td class="tab">statusIdstatu</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="BookReserv">
+        <h1>Заброньовані книги</h1>
+        <table id="getBookReserv">
+          <tr>
+            <td class="tab">dateReserv</td>
+            <td class="tab">dateEndReserv</td>
+            <td class="tab">use</td>
+            <td class="tab">bookIdbook</td>
+            <td class="tab">statusIdstatu</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Ваша компанія</p>
+    </footer>
+    <script src="./services/bookUser.js"></script>
+    <script src="./controllers/bookuserController.js"></script>
+  </body>
+</html>

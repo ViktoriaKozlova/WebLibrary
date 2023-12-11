@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сторінка авторизації</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>Вхід до системи</h1>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="home.html" class="link">Головна</a></li>
+          <li><a href="book.html" class="link">Каталог книг</a></li>
+        </ul>
+      </nav>
+
+      <section id="login-section">
+        <form action="process-login.php" method="post">
+          <label for="username">Логін:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit"><a href="cabinet.html"> Увійти</a></button>
+        </form>
+      </section>
+
+      <p>
+        Немає акаунту?
+        <a href="regis.html" style="color: rgb(8, 67, 134)">Зареєструватися</a>
+      </p>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 Ваша компанія</p>
+    </footer>
+  </body>
+</html>
